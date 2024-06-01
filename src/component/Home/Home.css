@@ -1,0 +1,137 @@
+.home-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px;
+    position: relative;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.home>h1 {
+    font-size: 80px;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home>p{
+    font-size: 12px;
+    width:60%;
+    margin: 0px;
+    padding: 0;
+}
+
+.home>button {
+    border: none;
+    outline: none;
+    background-color: #ff3c01;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 500px;
+    font-family: "poppins", sans-serif;
+    width: 150px;
+}
+
+.slider {
+    width: 920px;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.new{
+    position: absolute;
+    left: 39%;
+    top: -40px;
+    color: #ff3c01;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider>div>img {
+    height: 600px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.navigation-slide>div {
+    scroll-snap-align: start;
+    height: 600px;
+    width: 300px;
+    scroll-margin: 0px;
+    scroll-padding: 0px;
+    overflow: hidden;
+}
+
+.navigation-slide {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: -30px;
+    right: 26%;
+}
+
+.navigation-slide>a {
+    text-decoration: none;
+    margin: 0;
+    background-color: #ff3c01;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .home-main{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .new{
+        display: none;
+    }
+    .slider{
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px){
+    .home>h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 420px){
+    .navigation-slide{
+        right: 35%;
+    }
+    .slider>div>img{
+        width: 370px;
+    }
+}
+
+@media (max-width: 380px){
+    .slider>div>img{
+        width: 340px;
+    }
+}

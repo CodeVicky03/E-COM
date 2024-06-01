@@ -1,0 +1,167 @@
+.single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-product {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px;
+    box-shadow: rgba(0, 0, 0, 0.311) 0px 4px 12px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+.single-product>img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.single-product>div>h4 {
+    font-size: 50px;
+    font-weight: 550;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.single-product>div>h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.re-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.re-view>:nth-child(2) {
+    padding: 8px 14px;
+    background-color: #ff3c01;
+    color: #f5f5f5;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.re-view>:nth-child(1) {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 450;
+}
+
+.avalable {
+    padding: 8px 14px;
+    background-color: #539d0e;
+    color: #f5f5f5;
+    width: 220px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.avalable::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    right: -35px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+
+.dis-pric {
+    margin: 20px 0px;
+}
+
+.dis-pric>:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dis-pric>:nth-child(2) {
+    font-size: 15px;
+    font-weight: 450;
+    margin-left: 30px;
+}
+
+.off {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0px;
+}
+
+.off>i {
+    color: #539d0e;
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+hr {
+    height: 1px;
+    background-color: #111111a9;
+    border: none;
+}
+
+.address-input {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.address-input>div {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 15px;
+}
+
+.address-input>div>input {
+    padding: 10px 12px;
+    font-family: "poppins", sans-serif;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 240px;
+}
+
+.address-input>div>textarea {
+    padding: 10px 12px;
+    font-family: "poppins", sans-serif;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 240px;
+}
+.address-input>div>button{
+    padding: 10px 12px;
+    font-family: "poppins", sans-serif;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 264px;
+    cursor: pointer;
+    background-color: #539d0e;
+    color: #f5f5f5;
+    border: 2px solid #539d0e;
+}
+.pay-method{
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 180px;
+}

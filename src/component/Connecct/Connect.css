@@ -1,0 +1,58 @@
+.connect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 150px;
+}
+.connect>div>h1{
+    font-size: 28px;
+    font-weight: 550;
+}
+.connect>div>p{
+    font-size: 14px;
+    width: 60%;
+}
+.connect>div>input{
+    width: 500px;
+    border-bottom: 2px solid #111111;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: "poppins", sans-serif;
+    padding: 10px;
+    outline: none;
+}
+.connect>div>span{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: -86px;
+    padding: 8px 10px;
+    background-color: #ff3c01;
+    color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 500px;
+}
+
+@media (max-width: 1100px){
+    .connect>div>p{
+        width: 100%;
+    }
+    .connect>div>input{
+        width: 300px;
+    }
+    .connect{
+        gap: 60px;
+    }
+}
+
+@media (max-width: 920px){
+    .connect{
+        flex-direction: column;
+    }
+    .connect>div{
+        text-align: center;
+    }
+    .connect>:nth-child(1){
+        width: 300px;
+    }
+}
