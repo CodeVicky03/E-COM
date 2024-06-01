@@ -26,7 +26,11 @@ const Order = () => {
 
   const address = useMemo(() => {
     const add = JSON.parse(localStorage.getItem("Orders"));
-    return [add.address, add.number];
+    if (add) {
+      return [add.address, add.number];
+    } else {
+      return [null, null];
+    }
   }, []);
 
   return (
