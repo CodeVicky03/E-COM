@@ -204,6 +204,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-decoration: underline;
+    text-wrap: nowrap;
 }
 
 .else>p{
