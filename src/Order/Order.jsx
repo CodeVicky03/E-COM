@@ -3,8 +3,11 @@ import "./Order.css";
 import furnitureProducts from "../component/Products/projects";
 import Navbar from "../component/Navbar";
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { useNavigate } from "react-router-dom";
 
 const Order = () => {
+
+  const navigate = useNavigate();
   const [Orders, setOrders] = useState([]);
 
   useEffect(() => {
