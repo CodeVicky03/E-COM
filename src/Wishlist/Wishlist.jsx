@@ -41,7 +41,7 @@ const Wishlist = () => {
           <div className="else">
             <p>Wish list is Empty</p>
             <span onClick={() => navigate("/productlist")}>
-              Go to Product List{" "}
+              Go to Product List
               <MdOutlineKeyboardArrowRight
                 style={{ fontSize: "20px", marginBottom: "-5px" }}
               />

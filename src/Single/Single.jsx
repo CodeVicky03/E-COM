@@ -24,7 +24,7 @@ const Single = () => {
 
   const handleOrder = (id) => {
     const user = {
-      id : id,
+      id: id,
       username: Username,
       email: UserEmail,
       number: Usernumber,
@@ -35,6 +35,11 @@ const Single = () => {
     const orderID = JSON.parse(localStorage.getItem("ListOrder") || "[]");
     const updatedOrderID = [...orderID, id];
     localStorage.setItem("ListOrder", JSON.stringify(updatedOrderID));
+
+    setUsername("");
+    setUseremail("");
+    setUsernumber("");
+    setUseraddress("");
   };
 
   return (
@@ -90,11 +95,13 @@ const Single = () => {
                       <input
                         type="text"
                         placeholder="Usename"
+                        value={Username}
                         onChange={(e) => setUsername(e.target.value)}
                       />
                       <textarea
                         rows={4}
                         placeholder="Address"
+                        value={Useraddress}
                         onChange={(e) => setUseraddress(e.target.value)}
                       ></textarea>
                     </div>
@@ -102,10 +109,12 @@ const Single = () => {
                       <input
                         type="number"
                         placeholder="Mobile number"
+                        value={Usernumber}
                         onChange={(e) => setUsernumber(e.target.value)}
                       />
                       <input
                         type="Email"
+                        value={UserEmail}
                         placeholder="Email"
                         onChange={(e) => setUseremail(e.target.value)}
                       />

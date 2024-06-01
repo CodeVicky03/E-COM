@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .single-product {
     display: flex;
     justify-content: space-between;
@@ -164,4 +163,48 @@ hr {
     display: flex;
     align-items: center;
     width: 180px;
+}
+
+@media (max-width: 1250px){
+    .single-product{
+        margin: 40px 0px;
+        gap: 20px;
+        box-shadow: none;
+    }
+    .single-product>div>h4{
+        font-size: 30px;
+    }
+    .single-product>img{
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 1050px){
+    .address-input{
+        flex-direction: column;
+    }
+    .single-product>img{
+        height: 100%;
+    }
+}
+
+@media (max-width: 850px){
+    .re-view{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 760px){
+    .single-product{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px){
+    .single-product>img{
+        width: 100%;
+    }
 }
